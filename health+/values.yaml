@@ -1,0 +1,16 @@
+## Confluent operator name
+##
+name: confluent-operator
+
+telemetry:
+  operator:
+    enabled: true 
+  enabled: true 
+  proxy:
+    enabled: false
+    credentialRequired: false
+  secretRef: "telemetry"
+  ## To use directoryPathInContainer, need to make sure
+  ## you mount telemetry.txt in the path you provided here in each pod
+  directoryPathInContainer: ""
+
